@@ -74,7 +74,7 @@ public struct CellState {
                 column: @escaping () -> Int,
                 dateSection: @escaping () -> (range: (start: Date, end: Date), month: Int, rowCount: Int),
                 selectedPosition: @escaping () -> SelectionRangePosition,
-                cell: @escaping () -> JTAppleCell?,
+                cell: @escaping () -> JTACDayCell?,
                 selectionType: SelectionType? = nil) {
         self.isSelected = isSelected
         self.text = text

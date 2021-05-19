@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -11,14 +11,17 @@ let package = Package(
     products: [
         .library(
             name: "JTAppleCalendar",
-            targets: ["JTAppleCalendar"]),
+            targets: ["JTAppleCalendar"]
+        ),
     ],
     targets: [
         .target(
             name: "JTAppleCalendar",
-            dependencies: []),
+            dependencies: []
+        ),
         .testTarget(
             name: "JTAppleCalendarTests",
-            dependencies: ["JTAppleCalendar"]),
+            dependencies: ["JTAppleCalendar"]
+        ),
     ]
 )
